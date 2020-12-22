@@ -19,7 +19,7 @@ class SocketService with ChangeNotifier {
 
   void _initConfig() {
     // Dart client
-    this._socket = IO.io('http://192.168.1.62:3000/', {
+    this._socket = IO.io('https://zwingloo-bandnames-server.herokuapp.com/', {
       'transports': ['websocket'],
       'autoConnect': true
     });
